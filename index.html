@@ -3,6 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+      content="StellarVoyage - Explore the wonders of the universe with interactive space content, planetary facts, and cosmic discoveries. Journey through space like never before!" />
+    <meta name="keywords"
+      content="space, astronomy, planets, universe, cosmos, solar system, stars, galaxies, NASA, space exploration" />
+    <meta name="author" content="StellarVoyage" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="StellarVoyage - Your Journey Through Space" />
+    <meta property="og:description"
+      content="Explore the wonders of the universe with interactive space content and cosmic discoveries." />
+    <meta property="og:image" content="assets/bg.jpeg" />
+    <meta property="og:url" content="https://stellarvoyage.space" />
+    <meta property="og:type" content="website" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="StellarVoyage - Your Journey Through Space" />
+    <meta name="twitter:description"
+      content="Explore the wonders of the universe with interactive space content and cosmic discoveries." />
+    <meta name="twitter:image" content="assets/bg.jpeg" />
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,31 +40,116 @@
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
+    <!-- Space-Themed Favicon -->
+    <link rel="icon" type="image/svg+xml"
+      href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGRlZnM+CjxyYWRpYWxHcmFkaWVudCBpZD0icGxhbmV0IiBjeD0iNTAlIiBjeT0iNTAlIiByPSI1MCUiPgo8c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojYTg1NWY3O3N0b3Atb3BhY2l0eToxIiAvPgo8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiMzYjhhYjU7c3RvcC1vcGFjaXR5OjEiIC8+CjwvcmFkaWFsR3JhZGllbnQ+CjwvZGVmcz4KPGZpcmVpZ25PYmplY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSI+CjxkaXYgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiIHN0eWxlPSJ3aWR0aDozMnB4O2hlaWdodDozMnB4O2JhY2tncm91bmQ6IzBhMGEwYTtib3JkZXItcmFkaXVzOjUwJTtwb3NpdGlvbjpyZWxhdGl2ZTsiPgo8ZGl2IHN0eWxlPSJ3aWR0aDoxNnB4O2hlaWdodDoxNnB4O2JhY2tncm91bmQ6dXJsKCNwbGFuZXQpO2JvcmRlci1yYWRpdXM6NTAlO3Bvc2l0aW9uOmFic29sdXRlO3RvcDo1MCU7bGVmdDo1MCU7dHJhbnNmb3JtOnRyYW5zbGF0ZSgtNTAlLC01MCUpO2JveC1zaGFkb3c6MCAycHggMTBweCByZ2JhKDE2OCw4NSwyNDcsMC41KTsiPjwvZGl2Pgo8ZGl2IHN0eWxlPSJ3aWR0aDoycHg7aGVpZ2h0OjJweDtiYWNrZ3JvdW5kOiNmZmY7Ym9yZGVyLXJhZGl1czo1MCU7cG9zaXRpb246YWJzb2x1dGU7dG9wOjIwJTtsZWZ0OjE1JTtvcGFjaXR5OjAuODsiPjwvZGl2Pgo8ZGl2IHN0eWxlPSJ3aWR0aDoycHg7aGVpZ2h0OjJweDtiYWNrZ3JvdW5kOiNmZmY7Ym9yZGVyLXJhZGl1czo1MCU7cG9zaXRpb246YWJzb2x1dGU7dG9wOjc1JTtsZWZ0OjgwJTtvcGFjaXR5OjAuNjsiPjwvZGl2Pgo8ZGl2IHN0eWxlPSJ3aWR0aDoycHg7aGVpZ2h0OjJweDtiYWNrZ3JvdW5kOiNmZmY7Ym9yZGVyLXJhZGl1czo1MCU7cG9zaXRpb246YWJzb2x1dGU7dG9wOjMwJTtsZWZ0Ojc1JTtvcGFjaXR5OjAuNzsiPjwvZGl2Pgo8L2Rpdj4KPC9mb3JlaWduT2JqZWN0Pgo8L3N2Zz4K" />
+    <link rel="apple-touch-icon" sizes="180x180"
+      href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgwIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE4MCAxODAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxjaXJjbGUgY3g9IjkwIiBjeT0iOTAiIHI9Ijg1IiBmaWxsPSIjMGEwYTBhIiBzdHJva2U9IiNhODU1ZjciIHN0cm9rZS13aWR0aD0iMTAiLz4KPGNpcmNsZSBjeD0iOTAiIGN5PSI5MCIgcj0iNDAiIGZpbGw9IiNhODU1ZjciIG9wYWNpdHk9IjAuMyIvPgo8Y2lyY2xlIGN4PSI5MCIgY3k9IjkwIiByPSIyMCIgZmlsbD0iI2ZmZmZmZiIvPgo8Y2lyY2xlIGN4PSI0NSIgY3k9IjU1IiByPSI1IiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjgiLz4KPGNpcmNsZSBjeD0iMTM1IiBjeT0iNjUiIHI9IjUiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuNiIvPgo8Y2lyY2xlIGN4PSIxMjUiIGN5PSIxMjUiIHI9IjUiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuNyIvPgo8Y2lyY2xlIGN4PSI1NSIgY3k9IjEzNSIgcj0iNSIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC41Ii8+CjxjaXJjbGUgY3g9IjE1MCIgY3k9IjQ1IiByPSIzIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjQiLz4KPGNpcmNsZSBjeD0iMzAiIGN5PSIxMjAiIHI9IjMiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuNiIvPgo8L3N2Zz4K" />
+    <link rel="icon" type="image/png" sizes="32x32"
+      href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iMTUiIGZpbGw9IiMwYTBhMGEiIHN0cm9rZT0iI2E4NTVmNyIgc3Ryb2tlLXdpZHRoPSIyIi8+CjxjaXJjbGUgY3g9IjE2IiBjeT0iMTYiIHI9IjgiIGZpbGw9IiNhODU1ZjciIG9wYWNpdHk9IjAuMyIvPgo8Y2lyY2xlIGN4PSIxNiIgY3k9IjE2IiByPSI0IiBmaWxsPSIjZmZmZmZmIi8+CjxjaXJjbGUgY3g9IjgiIGN5PSIxMCIgcj0iMSIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC44Ii8+CjxjaXJjbGUgY3g9IjI0IiBjeT0iMTIiIHI9IjEiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuNiIvPgo8Y2lyY2xlIGN4PSIyMiIgY3k9IjIyIiByPSIxIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjciLz4KPGNpcmNsZSBjeD0iMTAiIGN5PSIyNCIgcj0iMSIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC41Ii8+Cjwvc3ZnPgo=" />
+    <link rel="icon" type="image/png" sizes="16x16"
+      href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iOCIgY3k9IjgiIHI9IjciIGZpbGw9IiMwYTBhMGEiIHN0cm9rZT0iI2E4NTVmNyIgc3Ryb2tlLXdpZHRoPSIyIi8+CjxjaXJjbGUgY3g9IjgiIGN5PSI4IiByPSI0IiBmaWxsPSIjYTg1NWY3IiBvcGFjaXR5PSIwLjMiLz4KPGNpcmNsZSBjeD0iOCIgY3k9IjgiIHI9IjIiIGZpbGw9IiNmZmZmZmYiLz4KPGNpcmNsZSBjeD0iNCIgY3k9IjUiIHI9IjAuNSIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC44Ii8+CjxjaXJjbGUgY3g9IjEyIiBjeT0iNiIgcj0iMC41IiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjYiLz4KPGNpcmNsZSBjeD0iMTEiIGN5PSIxMSIgcj0iMC41IiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjciLz4KPGNpcmNsZSBjeD0iNSIgY3k9IjEyIiByPSIwLjUiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuNSIvPgo8L3N2Zz4K" />
+    <meta name="theme-color" content="#a855f7" />
+
     <link rel="stylesheet" href="style.css" />
-        <title>STELLARVOYAGE</title>
+        <title>STELLARVOYAGE - Your Journey Through Space</title>
   </head>
   <body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+      <div class="loading-content">
+        <div class="rocket">🚀</div>
+        <div class="loading-text">Launching to Space...</div>
+        <div class="loading-bar">
+          <div class="loading-progress"></div>
+        </div>
+        <div class="stars"></div>
+      </div>
+    </div>
+    
+    <!-- Progress Indicator -->
+    <div class="reading-progress">
+      <div class="progress-bar"></div>
+    </div>
+    
+    
+    
+    <!-- Particle System -->
+    <div id="particles-container"></div>
+    
+    <!-- Cursor Trail -->
+    <div id="cursor-trail"></div>
+
     <header data-aos="fade-down" data-aos-delay="200">
       <div class="container">
         <div class="content">
           <div data-aos="fade-down-right" data-aos-delay="300" class="logo">
-            <img src="assets/saturn.png" alt="logo" />
-            <a href="">STELLARVOYAGE</a>
+            <img src="assets/saturn.png" alt="StellarVoyage Saturn Logo - Space Exploration Website" />
+            <a href="#home" aria-label="StellarVoyage Home">STELLARVOYAGE</a>
           </div>
 
           <div class="extra-nav">
-            <button data-aos="fade-down" data-aos-delay="400">
-              Explore Now!
-              <i data-feather="aperture" class="icon"></i>
+            <!-- Main Navigation -->
+            <nav class="navbar">
+              <ul class="nav-menu">
+                <li class="nav-item">
+                  <a href="#home" class="nav-link active" data-section="home">
+                    <i data-feather="home" class="nav-icon" aria-hidden="true"></i>
+                    <span>Home</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#features" class="nav-link" data-section="features">
+                    <i data-feather="zap" class="nav-icon" aria-hidden="true"></i>
+                    <span>Features</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#about" class="nav-link" data-section="about">
+                    <i data-feather="user" class="nav-icon" aria-hidden="true"></i>
+                    <span>About</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#destinations" class="nav-link" data-section="destinations">
+                    <i data-feather="map-pin" class="nav-icon" aria-hidden="true"></i>
+                    <span>Explore</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#facts" class="nav-link" data-section="facts">
+                    <i data-feather="star" class="nav-icon" aria-hidden="true"></i>
+                    <span>Facts</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#missions" class="nav-link" data-section="missions">
+                    <i data-feather="rocket" class="nav-icon" aria-hidden="true"></i>
+                    <span>Missions</span>
+                  </a>
+                </li>
+              </ul>
+            
+              <!-- Mobile Hamburger Menu -->
+              <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </nav>
+            
+            <button class="explore-btn" data-aos="fade-down" data-aos-delay="400" aria-label="Start exploring space content">
+              <i data-feather="aperture" class="icon" aria-hidden="true"></i>
+              <span>Explore</span>
             </button>
           </div>
         </div>
       </div>
     </header>
 
-    <a href="#" class="to-top"><i data-feather="chevron-up"></i></a>
+    <a href="#" class="to-top" aria-label="Back to top"><i data-feather="chevron-up" aria-hidden="true"></i></a>
 
-    <section class="hero">
+    <section class="hero" id="home">
       <div class="container">
         <div class="content">
           <div class="text">
@@ -56,7 +163,7 @@
               <span>unleashing innovations</span> that will transform our
               journey among the stars.
             </p>
-            <a href="#" data-aos="fade-up" data-aos-delay="400"> Learn More </a>
+            <a href="#about" data-aos="fade-up" data-aos-delay="400"> Learn More </a>
           </div>
 
           <div class="moon"></div>
@@ -64,7 +171,7 @@
       </div>
     </section>
 
-    <section class="why-us">
+    <section class="why-us" id="features">
       <div class="container">
         <div class="content">
           <div class="title" data-aos="fade-up" data-aos-delay="400">
@@ -117,7 +224,7 @@
       </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="container">
         <div class="content">
           <div class="text-action">
@@ -212,7 +319,7 @@
       </div>
     </section>
 
-    <section class="destination">
+    <section class="destination" id="destinations">
       <div class="container">
         <div class="content">
           <div class="title" data-aos="fade-right" data-aos-delay="200">
@@ -315,7 +422,7 @@
       </div>
     </section>
 
-    <section class="fun-facts">
+    <section class="fun-facts" id="facts">
       <div class="container">
         <div class="content">
           <div class="title" data-aos="fade-up" data-aos-delay="200">
@@ -391,6 +498,385 @@
                 Olympus Mons on Mars is the largest volcano in the solar system,
                 standing about 13 miles high.
               </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="space-missions" id="missions">
+      <div class="container">
+        <div class="content">
+          <div class="title" data-aos="fade-up" data-aos-delay="200">
+            <h2>SPACE MISSIONS</h2>
+            <h1>Historic Journey Through Space</h1>
+            <p>
+              Explore the timeline of humanity's greatest achievements in space exploration.
+            </p>
+          </div>
+    
+          <div class="timeline">
+            <div class="mission" data-aos="fade-right" data-aos-delay="300">
+              <div class="mission-year">1957</div>
+              <div class="mission-content">
+                <h3>Sputnik 1 🛰️</h3>
+                <p>First artificial satellite launched by the Soviet Union, marking the beginning of the Space Age. Orbited
+                  Earth for 96 minutes and transmitted radio signals.</p>
+                <div class="mission-details">
+                  <span>Mission Duration: 22 days</span>
+                  <span>Mass: 183.9 kg</span>
+                </div>
+                <div class="mission-status completed">Completed</div>
+              </div>
+            </div>
+    
+            <div class="mission" data-aos="fade-left" data-aos-delay="350">
+              <div class="mission-year">1961</div>
+              <div class="mission-content">
+                <h3>Yuri Gagarin 👨‍🚀</h3>
+                <p>First human to journey into space and orbit Earth aboard Vostok 1, completing one orbit in 108 minutes.
+                </p>
+                <div class="mission-details">
+                  <span>Flight Duration: 1h 48m</span>
+                  <span>Altitude: 327 km</span>
+                </div>
+                <div class="mission-status completed">Completed</div>
+              </div>
+            </div>
+    
+            <div class="mission" data-aos="fade-right" data-aos-delay="400">
+              <div class="mission-year">1969</div>
+              <div class="mission-content">
+                <h3>Apollo 11 🌙</h3>
+                <p>First crewed moon landing with Neil Armstrong and Buzz Aldrin walking on lunar surface while Michael
+                  Collins orbited above.</p>
+                <div class="mission-details">
+                  <span>Mission Duration: 8 days</span>
+                  <span>Lunar Surface Time: 21h 31m</span>
+                </div>
+                <div class="mission-status completed">Completed</div>
+              </div>
+            </div>
+    
+            <div class="mission" data-aos="fade-left" data-aos-delay="450">
+              <div class="mission-year">1977</div>
+              <div class="mission-content">
+                <h3>Voyager Program 🚀</h3>
+                <p>Twin spacecraft exploring the outer solar system and now traveling in interstellar space, carrying golden
+                  records with Earth's sounds.</p>
+                <div class="mission-details">
+                  <span>Status: Active (47+ years)</span>
+                  <span>Distance: 24+ billion km from Earth</span>
+                </div>
+                <div class="mission-status active">Active</div>
+              </div>
+            </div>
+    
+            <div class="mission" data-aos="fade-right" data-aos-delay="500">
+              <div class="mission-year">1998</div>
+              <div class="mission-content">
+                <h3>International Space Station 🏠</h3>
+                <p>Largest human-made object in space, serving as a microgravity laboratory for scientific research and
+                  international cooperation.</p>
+                <div class="mission-details">
+                  <span>Altitude: 408 km</span>
+                  <span>Crew: Up to 7 astronauts</span>
+                </div>
+                <div class="mission-status active">Active</div>
+              </div>
+            </div>
+    
+            <div class="mission" data-aos="fade-left" data-aos-delay="550">
+              <div class="mission-year">2021</div>
+              <div class="mission-content">
+                <h3>Perseverance Rover 🔴</h3>
+                <p>Advanced rover searching for signs of ancient microbial life on Mars surface and producing oxygen from
+                  Martian atmosphere.</p>
+                <div class="mission-details">
+                  <span>Location: Jezero Crater, Mars</span>
+                  <span>Companion: Ingenuity Helicopter</span>
+                </div>
+                <div class="mission-status active">Active</div>
+              </div>
+            </div>
+    
+            <div class="mission" data-aos="fade-right" data-aos-delay="600">
+              <div class="mission-year">2022</div>
+              <div class="mission-content">
+                <h3>James Webb Space Telescope 🔭</h3>
+                <p>Most powerful space telescope ever built, observing the universe in infrared light and revolutionizing
+                  our understanding of cosmos.</p>
+                <div class="mission-details">
+                  <span>Location: L2 Lagrange Point</span>
+                  <span>Mirror: 6.5 meters diameter</span>
+                </div>
+                <div class="mission-status active">Active</div>
+              </div>
+            </div>
+    
+            <div class="mission" data-aos="fade-left" data-aos-delay="650">
+              <div class="mission-year">2026</div>
+              <div class="mission-content">
+                <h3>Artemis III 🌕</h3>
+                <p>Planned mission to return humans to the Moon, including the first woman on lunar surface, establishing
+                  sustainable lunar presence.</p>
+                <div class="mission-details">
+                  <span>Landing Site: Lunar South Pole</span>
+                  <span>Duration: 6.5 days on surface</span>
+                </div>
+                <div class="mission-status upcoming">Upcoming</div>
+              </div>
+            </div>
+    
+            <div class="mission" data-aos="fade-right" data-aos-delay="700">
+              <div class="mission-year">2030s</div>
+              <div class="mission-content">
+                <h3>Mars Human Mission 🚀</h3>
+                <p>First crewed mission to Mars, representing humanity's next giant leap in space exploration and potential
+                  colonization.</p>
+                <div class="mission-details">
+                  <span>Journey Time: 6-9 months</span>
+                  <span>Surface Stay: 15+ months</span>
+                </div>
+                <div class="mission-status upcoming">Future</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Space Calculator Section -->
+    <section class="space-calculator" id="calculator">
+      <div class="container">
+        <div class="content">
+          <div class="title" data-aos="fade-up" data-aos-delay="200">
+            <h2>SPACE CALCULATOR</h2>
+            <h1>Calculate Distances Between Planets</h1>
+            <p>
+              Explore the vast distances of our solar system with interactive calculations.
+            </p>
+          </div>
+    
+          <div class="calculator-container" data-aos="fade-up" data-aos-delay="300">
+            <div class="planet-selectors">
+              <div class="selector-group">
+                <label for="planet1">From:</label>
+                <select id="planet1">
+                  <option value="mercury">Mercury</option>
+                  <option value="venus">Venus</option>
+                  <option value="earth" selected>Earth</option>
+                  <option value="mars">Mars</option>
+                  <option value="jupiter">Jupiter</option>
+                  <option value="saturn">Saturn</option>
+                  <option value="uranus">Uranus</option>
+                  <option value="neptune">Neptune</option>
+                </select>
+              </div>
+              <div class="selector-group">
+                <label for="planet2">To:</label>
+                <select id="planet2">
+                  <option value="mercury">Mercury</option>
+                  <option value="venus">Venus</option>
+                  <option value="earth">Earth</option>
+                  <option value="mars" selected>Mars</option>
+                  <option value="jupiter">Jupiter</option>
+                  <option value="saturn">Saturn</option>
+                  <option value="uranus">Uranus</option>
+                  <option value="neptune">Neptune</option>
+                </select>
+              </div>
+            </div>
+            <button id="calculate-btn" class="calculate-button">
+              Calculate Distance
+              <i data-feather="zap" class="icon"></i>
+            </button>
+            <div class="result-display" id="distance-result">
+              <div class="result-item">
+                <span class="label">Distance:</span>
+                <span class="value" id="distance-value">225 million km</span>
+              </div>
+              <div class="result-item">
+                <span class="label">Travel Time (Light Speed):</span>
+                <span class="value" id="light-time">12.5 minutes</span>
+              </div>
+              <div class="result-item">
+                <span class="label">Travel Time (Rocket):</span>
+                <span class="value" id="rocket-time">9 months</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Constellation Map Section -->
+    <section class="constellation-map" id="constellation">
+      <div class="container">
+        <div class="content">
+          <div class="title" data-aos="fade-up" data-aos-delay="200">
+            <h2>CONSTELLATION MAP</h2>
+            <h1>Interactive Star Map</h1>
+            <p>
+              Explore the night sky and discover famous constellations.
+            </p>
+          </div>
+    
+          <div class="star-map-container" data-aos="fade-up" data-aos-delay="300">
+            <div class="constellation-controls">
+              <button class="constellation-btn active" data-constellation="ursa-major">Ursa Major</button>
+              <button class="constellation-btn" data-constellation="orion">Orion</button>
+              <button class="constellation-btn" data-constellation="cassiopeia">Cassiopeia</button>
+              <button class="constellation-btn" data-constellation="big-dipper">Big Dipper</button>
+            </div>
+            <div class="star-map" id="star-map">
+              <!-- Ursa Major Constellation -->
+              <div class="constellation ursa-major active">
+                <svg class="constellation-lines" viewBox="0 0 100 100">
+                  <path d="M15,20 L25,25 L40,30 L55,35 L70,40 M55,35 L65,55 L45,60" stroke="rgba(255,255,255,0.4)"
+                    stroke-width="0.2" fill="none" />
+                </svg>
+                <div class="star bright-star" style="top: 20%; left: 15%;" data-name="Dubhe"></div>
+                <div class="star" style="top: 25%; left: 25%;" data-name="Merak"></div>
+                <div class="star" style="top: 30%; left: 40%;" data-name="Phecda"></div>
+                <div class="star bright-star" style="top: 35%; left: 55%;" data-name="Megrez"></div>
+                <div class="star" style="top: 40%; left: 70%;" data-name="Alioth"></div>
+                <div class="star" style="top: 55%; left: 65%;" data-name="Mizar"></div>
+                <div class="star" style="top: 60%; left: 45%;" data-name="Alkaid"></div>
+              </div>
+    
+              <!-- Orion Constellation -->
+              <div class="constellation orion">
+                <svg class="constellation-lines" viewBox="0 0 100 100">
+                  <path
+                    d="M30,15 L50,25 L70,15 M30,15 L35,35 M70,15 L65,35 M25,45 L40,50 L60,50 L75,45 M35,35 L40,50 M65,35 L60,50 M40,50 L45,70 M60,50 L55,70 M45,70 L55,70"
+                    stroke="rgba(255,255,255,0.4)" stroke-width="0.2" fill="none" />
+                </svg>
+                <div class="star bright-star" style="top: 15%; left: 30%;" data-name="Bellatrix"></div>
+                <div class="star" style="top: 25%; left: 50%;" data-name="Meissa"></div>
+                <div class="star bright-star" style="top: 15%; left: 70%;" data-name="Betelgeuse"></div>
+                <div class="star" style="top: 35%; left: 35%;" data-name="Alnitak"></div>
+                <div class="star" style="top: 35%; left: 65%;" data-name="Alnilam"></div>
+                <div class="star bright-star" style="top: 45%; left: 25%;" data-name="Mintaka"></div>
+                <div class="star bright-star" style="top: 50%; left: 40%;" data-name="Alnitak"></div>
+                <div class="star bright-star" style="top: 50%; left: 60%;" data-name="Alnilam"></div>
+                <div class="star" style="top: 45%; left: 75%;" data-name="Mintaka"></div>
+                <div class="star bright-star" style="top: 70%; left: 45%;" data-name="Saiph"></div>
+                <div class="star bright-star" style="top: 70%; left: 55%;" data-name="Rigel"></div>
+              </div>
+    
+              <!-- Cassiopeia Constellation -->
+              <div class="constellation cassiopeia">
+                <svg class="constellation-lines" viewBox="0 0 100 100">
+                  <path d="M15,45 L30,25 L50,40 L70,20 L85,35" stroke="rgba(255,255,255,0.4)" stroke-width="0.2"
+                    fill="none" />
+                </svg>
+                <div class="star bright-star" style="top: 45%; left: 15%;" data-name="Caph"></div>
+                <div class="star" style="top: 25%; left: 30%;" data-name="Schedar"></div>
+                <div class="star bright-star" style="top: 40%; left: 50%;" data-name="Gamma Cas"></div>
+                <div class="star" style="top: 20%; left: 70%;" data-name="Ruchbah"></div>
+                <div class="star" style="top: 35%; left: 85%;" data-name="Segin"></div>
+              </div>
+    
+              <!-- Big Dipper (Part of Ursa Major) -->
+              <div class="constellation big-dipper">
+                <svg class="constellation-lines" viewBox="0 0 100 100">
+                  <path d="M20,35 L35,40 L50,35 L65,40 M50,35 L55,55 L70,60 L80,55" stroke="rgba(255,255,255,0.4)"
+                    stroke-width="0.2" fill="none" />
+                </svg>
+                <div class="star bright-star" style="top: 35%; left: 20%;" data-name="Dubhe"></div>
+                <div class="star" style="top: 40%; left: 35%;" data-name="Merak"></div>
+                <div class="star" style="top: 35%; left: 50%;" data-name="Phecda"></div>
+                <div class="star bright-star" style="top: 40%; left: 65%;" data-name="Megrez"></div>
+                <div class="star" style="top: 55%; left: 55%;" data-name="Alioth"></div>
+                <div class="star" style="top: 60%; left: 70%;" data-name="Mizar"></div>
+                <div class="star bright-star" style="top: 55%; left: 80%;" data-name="Alkaid"></div>
+              </div>
+            </div>
+            <div class="constellation-info" id="constellation-info">
+              <h3>Ursa Major (The Great Bear)</h3>
+              <p>One of the most recognizable constellations in the northern sky, containing the famous Big Dipper asterism.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Space Technology Section -->
+    <section class="space-technology" id="technology">
+      <div class="container">
+        <div class="content">
+          <div class="title" data-aos="fade-up" data-aos-delay="200">
+            <h2>SPACE TECHNOLOGY</h2>
+            <h1>Rockets, Satellites & Space Stations</h1>
+            <p>
+              Discover the incredible technology that enables human space exploration.
+            </p>
+          </div>
+    
+          <div class="technology-grid">
+            <div class="tech-category" data-aos="fade-right" data-aos-delay="300">
+              <div class="tech-icon">🚀</div>
+              <h3>Rocket Technology</h3>
+              <div class="tech-items">
+                <div class="tech-item">
+                  <h4>SpaceX Falcon Heavy</h4>
+                  <p>Reusable heavy-lift launch vehicle with 27 engines</p>
+                  <div class="tech-stats">
+                    <span>Payload: 63,800 kg to LEO</span>
+                  </div>
+                </div>
+                <div class="tech-item">
+                  <h4>NASA SLS</h4>
+                  <p>Most powerful rocket ever built for deep space missions</p>
+                  <div class="tech-stats">
+                    <span>Payload: 95,000 kg to LEO</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="tech-category" data-aos="fade-up" data-aos-delay="400">
+              <div class="tech-icon">🛰️</div>
+              <h3>Satellites</h3>
+              <div class="tech-items">
+                <div class="tech-item">
+                  <h4>Hubble Space Telescope</h4>
+                  <p>Observing the universe for over 30 years</p>
+                  <div class="tech-stats">
+                    <span>Orbit: 547 km altitude</span>
+                  </div>
+                </div>
+                <div class="tech-item">
+                  <h4>James Webb Space Telescope</h4>
+                  <p>Most advanced space telescope ever built</p>
+                  <div class="tech-stats">
+                    <span>Location: L2 Lagrange Point</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="tech-category" data-aos="fade-left" data-aos-delay="500">
+              <div class="tech-icon">🏠</div>
+              <h3>Space Stations</h3>
+              <div class="tech-items">
+                <div class="tech-item">
+                  <h4>International Space Station</h4>
+                  <p>Largest human-made object in low Earth orbit</p>
+                  <div class="tech-stats">
+                    <span>Crew: 7 astronauts</span>
+                  </div>
+                </div>
+                <div class="tech-item">
+                  <h4>Tiangong Space Station</h4>
+                  <p>China's modular space station in orbit</p>
+                  <div class="tech-stats">
+                    <span>Modules: 3 main sections</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
